@@ -1,20 +1,20 @@
 /* Exersise 1 */
-let people =[
+let people = [
     {
-        name: "Bob", 
-        department: "sales", 
-        title: "sales manager"},
+        name: 'Bob', 
+        department: 'sales',
+        title: 'sales manager'},
     {
-        name: "Tina", 
+        name: 'Tina', 
         department: 'finance', 
         title: 'director of finance'
     },
     {
-        name: "Randy", 
+        name: 'Randy', 
         department: 'IT', 
         title: 'hardware guy'},
     {
-        name: "Glenda", 
+        name: 'Glenda', 
         department: 'C-suite', 
         title: 'CEO'
     }
