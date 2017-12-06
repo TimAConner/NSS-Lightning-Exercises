@@ -30,31 +30,38 @@
 
 /* Exersise 2 */
 
-var person = (function (originalPerson) {
-    originalPerson.height = "6'3";
-    originalPerson.weight = 175;
-    originalPerson.name = "Tim";
-    let getName = function(){
-        return this.name;
-    }
+// var person = (function (originalPerson) {
+//     originalPerson.height = "6'3";
+//     originalPerson.weight = 175;
+//     originalPerson.name = "Tim";
+//     let getName = function(){
+//         return this.name;
+//     }
 
-    originalPerson.getName = getName();
+//     originalPerson.getName = getName();
 
-    return originalPerson;
+//     return originalPerson;
 
-})(person || {});
+// })(person || {});
 
 
-var child = (function (originalPerson) {
-    let favGame = "Stratego";
-    let favFood = "Bread";
+// var child = (function (originalPerson) {
+//     let favGame = "Stratego";
+//     let favFood = "Bread";
 
-    originalPerson.favGame = favGame;
-    originalPerson.favFood = favFood;
+//     originalPerson.favGame = favGame;
+//     originalPerson.favFood = favFood;
 
-    return originalPerson;
-})(person || {});
+//     return originalPerson;
+// })(person || {});
 
-console.log(child.hasOwnProperty("height"));// True
+// console.log(child.hasOwnProperty("height"));// True
 
-console.log(child.hasOwnProperty("favGame"));// True
+// console.log(child.hasOwnProperty("favGame"));// True
+
+/* Exersies 3 */
+
+let array = [45, 'I', true, null, 'am', 3.56, 'a', undefined, { catchphrase: 'Oh hai, Mark'}, 'JS', 'rockstar'];
+
+let stringArray = array.filter(word => ((typeof(word) === "string")));
+console.log(stringArray);
