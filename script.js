@@ -124,6 +124,4 @@ yoda_quote = yoda_quote.map((word) => {
     return word;
 }).join(" ");
 
-console.log(yoda_quote);
-
 console.log("Yoda says,", '"' + yoda_quote + '."');
