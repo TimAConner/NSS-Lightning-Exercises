@@ -61,7 +61,37 @@
 
 /* Exersies 3 */
 
-let array = [45, 'I', true, null, 'am', 3.56, 'a', undefined, { catchphrase: 'Oh hai, Mark'}, 'JS', 'rockstar'];
+// let array = [45, 'I', true, null, 'am', 3.56, 'a', undefined, { catchphrase: 'Oh hai, Mark'}, 'JS', 'rockstar'];
 
-let stringArray = array.filter(word => ((typeof(word) === "string")));
-console.log(stringArray);
+// let stringArray = array.filter(word => ((typeof(word) === "string")));
+
+// console.log(stringArray);
+
+
+/* Exercise 4 */
+
+let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
+let fave_demo = [];
+
+for(let i = 0; i < ages.length; i++){
+    if(ages[i] >= 18 && ages[i] <= 49){
+        fave_demo.push(ages[i]);
+    }
+}
+console.log("for loop", fave_demo);
+
+fave_demo = [];
+
+ages.forEach((x) => {
+    if(x >= 18 && x <= 49){
+        fave_demo.push(x);
+    }
+});
+
+console.log("foreach", fave_demo);
+
+fave_demo = [];
+
+fave_demo = ages.filter((x) => x >= 18 && x <= 49);
+
+console.log("filter", fave_demo);
