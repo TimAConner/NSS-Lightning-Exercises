@@ -68,27 +68,43 @@
 // console.log(stringArray);
 
 
-/* Exercise 4 */
+// /* Exercise 4 */
 
-let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102],
-fave_demo = [];
+// let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102],
+// fave_demo = [];
 
-ages = ages.sort((a, b) => a - b);
+// ages = ages.sort((a, b) => a - b);
 
 
-for(let i = 0; i < ages.length; i++){
-    if(ages[i] >= 18 && ages[i] <= 49) fave_demo.push(ages[i]);
-}
-console.log("for loop", fave_demo);
+// for(let i = 0; i < ages.length; i++){
+//     if(ages[i] >= 18 && ages[i] <= 49) fave_demo.push(ages[i]);
+// }
+// console.log("for loop", fave_demo);
 
-fave_demo = [];
+// fave_demo = [];
 
-ages.forEach((x) => {
-    if(x >= 18 && x <= 49) fave_demo.push(x);
-});
-console.log("foreach", fave_demo);
+// ages.forEach((x) => {
+//     if(x >= 18 && x <= 49) fave_demo.push(x);
+// });
+// console.log("foreach", fave_demo);
 
-fave_demo = [];
+// fave_demo = [];
 
-fave_demo = ages.filter(x => x >= 18 && x <= 49);
-console.log("filter", fave_demo);
+// fave_demo = ages.filter(x => x >= 18 && x <= 49);
+// console.log("filter", fave_demo);
+
+/* Exercise 5 */
+
+let hitchhikers_guide = {
+    characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+    catchphrase: "Don't Panic",
+    random_facts: {
+      copies_sold: 14000000,
+      formats: ["radio", "TV", "film", "graphic novel"],
+      ultimate_answer: {
+        meaning_of_life: 42
+      }
+    }
+  };
+
+console.log("The meaning of life is", hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
