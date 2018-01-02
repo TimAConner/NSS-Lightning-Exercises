@@ -93,20 +93,28 @@
 // fave_demo = ages.filter(x => x >= 18 && x <= 49);
 // console.log("filter", fave_demo);
 
-/* Exercise 5 */
+// /* Exercise 5 */
 
-let hitchhikers_guide = {
-    characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
-    catchphrase: "Don't Panic",
-    random_facts: {
-      copies_sold: 14000000,
-      formats: ["radio", "TV", "film", "graphic novel"],
-      ultimate_answer: {
-        meaning_of_life: 42
-      }
-    }
-  };
+// let hitchhikers_guide = {
+//     characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+//     catchphrase: "Don't Panic",
+//     random_facts: {
+//       copies_sold: 14000000,
+//       formats: ["radio", "TV", "film", "graphic novel"],
+//       ultimate_answer: {
+//         meaning_of_life: 42
+//       }
+//     }
+//   };
 
-  let meaning = "meaning_of_life"; 
+//   let meaning = "meaning_of_life"; 
 
-console.log("The meaning of life is", hitchhikers_guide.random_facts.ultimate_answer[meaning]);
+// console.log("The meaning of life is", hitchhikers_guide.random_facts.ultimate_answer[meaning]);
+
+/* Exercise 6*/
+
+let yoda_quote = ["the", "greatest", "teacher" , "failure", "is"];
+
+yoda_quote[0] = yoda_quote[0].charAt(0).toUpperCase() + yoda_quote[0].slice(1);
+yoda_quote[2] = yoda_quote[2] + ","
+console.log("Yoda says,", '"' + yoda_quote.join(" ") + '."');
