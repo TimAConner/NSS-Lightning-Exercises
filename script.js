@@ -115,7 +115,15 @@
 
 let yoda_quote = ["the", "greatest", "teacher" , "failure", "is"];
 
-yoda_quote[0] = yoda_quote[0].charAt(0).toUpperCase() + yoda_quote[0].slice(1);
-yoda_quote[2] += ",";
+// yoda_quote[0] = yoda_quote[0].charAt(0).toUpperCase() + yoda_quote[0].slice(1);
+// yoda_quote[2] += ",";
 
-console.log("Yoda says,", '"' + yoda_quote.join(" ") + '."');
+yoda_quote = yoda_quote.map((word) => {
+    if(word === "the") word = word.charAt(0).toUpperCase() + word.slice(1);
+    if(word === "teacher") word += ",";
+    return word;
+}).join(" ");
+
+console.log(yoda_quote);
+
+console.log("Yoda says,", '"' + yoda_quote + '."');
