@@ -116,5 +116,6 @@
 let yoda_quote = ["the", "greatest", "teacher" , "failure", "is"];
 
 yoda_quote[0] = yoda_quote[0].charAt(0).toUpperCase() + yoda_quote[0].slice(1);
-yoda_quote[2] = yoda_quote[2] + ",";
+yoda_quote[2] += ",";
+
 console.log("Yoda says,", '"' + yoda_quote.join(" ") + '."');
