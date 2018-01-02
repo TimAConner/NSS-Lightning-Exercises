@@ -107,4 +107,6 @@ let hitchhikers_guide = {
     }
   };
 
-console.log("The meaning of life is", hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
+  let meaning = "meaning_of_life"; 
+
+console.log("The meaning of life is", hitchhikers_guide.random_facts.ultimate_answer[meaning]);
