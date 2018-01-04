@@ -137,18 +137,25 @@ let sorted = [];
 // }   
 // );
 
-for(let i = 0; i  < nums.length; i++){
- 
-    if(i === 0){
-        nums.push(9);
-        nums.push(11);
-        nums.push(13);
-        nums = nums.filter((x) => +x % 2 !== 0);
-        nums.shift();
-    }
-    nums[i] = +nums[i];
+// nums = nums.map((x) => {(+x*2)-1});
 
-    
+
+for(let i = 0; i < nums.length-1; i ++){
+    sorted.push(+nums[i] + +nums[i+ 1]);
 }
 
-console.log(nums);
+// for(let i = 0; i  < nums.length; i++){
+ 
+//     if(i === 0){
+//         nums.push(9);
+//         nums.push(11);
+//         nums.push(13);
+//         nums = nums.filter((x) => +x % 2 !== 0);
+//         nums.shift();
+//     }
+//     nums[i] = +nums[i];
+
+    
+// }
+
+console.log(sorted);
