@@ -131,10 +131,24 @@
 
 let nums = [1, 2, 3, 4, "5", 6, "7"]
 
-let sorted = nums.sort((a, b) => {
-   return  +a - +b
+let sorted = [];
+// let sorted = nums.sort((a, b) => {
+//    return  +a - +b
+// }   
+// );
+
+for(let i = 0; i  < nums.length; i++){
+ 
+    if(i === 0){
+        nums.push(9);
+        nums.push(11);
+        nums.push(13);
+        nums = nums.filter((x) => +x % 2 !== 0);
+        nums.shift();
+    }
+    nums[i] = +nums[i];
+
+    
 }
-);
 
-
-console.log(sorted);
+console.log(nums);
