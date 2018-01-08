@@ -200,21 +200,31 @@ let customers = {
       }
     }
   };
-let activeKeys = Object.keys(customers.active),
-inactiveKeys = Object.keys(customers.inactive);
 
-let allCustomers = [];
+  let customerStatus = [];
 
-activeKeys.forEach((member) => {
-    customers.active[member].id = member;
-    allCustomers.push(customers.active[member]);
-});
-inactiveKeys.forEach((member) => {
-    customers.inactive[member].id = member;
-    allCustomers.push(customers.inactive[member]);
-});
+  for(let status in customers){
+      let keys = Object.keys(customers[status]);
+      keys.forEach((key) => {
+          customers[status][key].id = key;
+      });
+  }
+  
+  console.log('customers', customers);
+
+// let activeKeys = Object.keys(customerStatus),
+// let allCustomers = [];
+
+// activeKeys.forEach((member) => {
+//     customers.active[member].id = member;
+//     allCustomers.push(customers.active[member]);
+// });
+// inactiveKeys.forEach((member) => {
+//     customers.inactive[member].id = member;
+//     allCustomers.push(customers.inactive[member]);
+// });
 
 
-console.log(allCustomers);
+// console.log(allCustomers);
 
 
