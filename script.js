@@ -127,35 +127,89 @@
 // console.log("Yoda says,", '"' + yoda_quote + '."');
 
 
-/* Exercise 8 */
+// /* Exercise 8 */
 
-let nums = [1, 2, 3, 4, "5", 6, "7"]
+// let nums = [1, 2, 3, 4, "5", 6, "7"]
 
-let sorted = [];
-// let sorted = nums.sort((a, b) => {
-//    return  +a - +b
-// }   
-// );
+// let sorted = [];
+// // let sorted = nums.sort((a, b) => {
+// //    return  +a - +b
+// // }   
+// // );
 
-// nums = nums.map((x) => {(+x*2)-1});
+// // nums = nums.map((x) => {(+x*2)-1});
 
 
-for(let i = 0; i < nums.length-1; i ++){
-    sorted.push(+nums[i] + +nums[i+ 1]);
-}
-
-// for(let i = 0; i  < nums.length; i++){
- 
-//     if(i === 0){
-//         nums.push(9);
-//         nums.push(11);
-//         nums.push(13);
-//         nums = nums.filter((x) => +x % 2 !== 0);
-//         nums.shift();
-//     }
-//     nums[i] = +nums[i];
-
-    
+// for(let i = 0; i < nums.length-1; i ++){
+//     sorted.push(+nums[i] + +nums[i+ 1]);
 // }
 
-console.log(sorted);
+// // for(let i = 0; i  < nums.length; i++){
+ 
+// //     if(i === 0){
+// //         nums.push(9);
+// //         nums.push(11);
+// //         nums.push(13);
+// //         nums = nums.filter((x) => +x % 2 !== 0);
+// //         nums.shift();
+// //     }
+// //     nums[i] = +nums[i];
+
+    
+// // }
+
+// console.log(sorted);
+
+/* Exersize 9 */
+
+// lightning exercise:
+// Loop through this object and add each member object's key as an ID. Log the results.
+let customers = {
+    active: {
+      a87b6345: {
+        name: "Gary Harrison",
+        age: 23,
+        member_level: "gold"
+      },
+      b345hy66: {
+        name: "Harry Garrison",
+        age: 34,
+        member_level: "silver"
+      },
+      nh56yht8: {
+        name: "Mary Terryson",
+        age: 78,
+        member_level: "platinum"
+      },
+      j677yd456: {
+        name: "Barry Sonnyman",
+        age: 44,
+        member_level: "gold"
+      }
+    },
+    inactive: {
+      ur56tfgt: {
+        name: "Barb Justice",
+        age: 56,
+        member_level: "none"
+      },
+      d56gt6: {
+        name: "Jane L'eggo",
+        age: 11,
+        member_level: "none"
+      }
+    }
+  };
+  let activeKeys = Object.keys(customers.active);
+  let inactiveKeys = Object.keys(customers.inactive);
+
+  activeKeys.forEach((member) => {
+      customers.active[member].id = member;
+  });
+  inactiveKeys.forEach((member) => {
+    customers.inactive[member].id = member;
+});
+
+  console.log(customers);
+
+
