@@ -3,7 +3,7 @@
 ## Motivation
 These are quick practice exersises done while attending the [Nashville Software School](http://nashvillesoftwareschool.com/).
 
-### Exersize #9
+### Exercise #9
 Loop through this object and add each member object's key as an ID. Log the results.
 
 ```

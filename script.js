@@ -1,4 +1,4 @@
-/* Exersise 1 */
+/* Exercise 1 */
 // let people = [
 //     {
 //         name: 'Bob', 
@@ -28,7 +28,7 @@
 
 // print(people);
 
-/* Exersise 2 */
+/* Exercise 2 */
 
 // var person = (function (originalPerson) {
 //     originalPerson.height = "6'3";
@@ -160,7 +160,7 @@
 
 // console.log(sorted);
 
-/* Exersize 9 */
+/* Exercise 9 */
 
 // lightning exercise:
 // Loop through this object and add each member object's key as an ID. Log the results.
@@ -200,16 +200,21 @@ let customers = {
       }
     }
   };
-  let activeKeys = Object.keys(customers.active);
-  let inactiveKeys = Object.keys(customers.inactive);
+let activeKeys = Object.keys(customers.active),
+inactiveKeys = Object.keys(customers.inactive);
 
-  activeKeys.forEach((member) => {
-      customers.active[member].id = member;
-  });
-  inactiveKeys.forEach((member) => {
+let allCustomers = [];
+
+activeKeys.forEach((member) => {
+    customers.active[member].id = member;
+    allCustomers.push(customers.active[member]);
+});
+inactiveKeys.forEach((member) => {
     customers.inactive[member].id = member;
+    allCustomers.push(customers.inactive[member]);
 });
 
-  console.log(customers);
+
+console.log(allCustomers);
 
 
